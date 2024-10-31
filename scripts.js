@@ -17,19 +17,35 @@
 // }
 
 
-let salaries = {
-    John: 100,
-    Ann: 160,
-    Pete: 130,
-};
-function SumSalaries(salaries){
-    sum = 0;
-    for(let person in salaries){
-        if(salaries.hasOwnProperty(person)){
-            sum += salaries[person];
+// let salaries = {
+//     John: 100,
+//     Ann: 160,
+//     Pete: 130,
+// };
+// function SumSalaries(salaries){
+//     sum = 0;
+//     for(let person in salaries){
+//         if(salaries.hasOwnProperty(person)){
+//             sum += salaries[person];
+//     }
+// }
+// return sum;
+// }
+// let totalSalaries = SumSalaries(salaries);
+// alert(totalSalaries);
+
+
+function multiplyNumeric(Obj){
+    for(let num in Obj){
+        if(typeof Obj[num] == 'number'){
+            Obj[num] *= 2;
+        }
     }
 }
-return sum;
-}
-let totalSalaries = SumSalaries(salaries);
-alert(totalSalaries);
+let menu = {
+    width: 200,
+    height: 300,
+    title: "My menu"
+};
+multiplyNumeric(menu);
+console.log(menu);
