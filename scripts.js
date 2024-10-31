@@ -17,12 +17,15 @@
 // }
 
 
-let login = "Boss";
-let password = "12345"
-let login_1 = prompt("Введите логин:");
-let password_1 = prompt("Введите пароль:");
-if(login == login_1, password == password_1){
-    alert("Доступ разрешён");
-} else {
-    alert("Доступ запрещён");
-}
+// let login = "Boss";
+// let password = "12345"
+// let login_1 = prompt("Введите логин:");
+// let password_1 = prompt("Введите пароль:");
+// if(login == login_1, password == password_1){
+//     alert("Доступ разрешён");
+// } else {
+//     alert("Доступ запрещён");
+// }
+
+
+
