@@ -1,13 +1,20 @@
-const rectangle = {
-    width: 4,
-    height: 5,
-    getArea() {
-      return this.width * this.height;
+const account = {
+    balance: 0,
+    deposit(amount) {
+      this.balance += amount;
     },
-    getPerimeter() {
-      return 2 * (this.width + this.height);
+    withdraw(amount) {
+      if (amount > this.balance) {
+        console.log("Недостаточно средств");
+      } else {
+        this.balance -= amount;
+      }
+    },
+    getBalance() {
+      return this.balance;
     }
   };
-  
-  console.log(rectangle.getArea());
-  console.log(rectangle.getPerimeter());
+  account.deposit(100);
+  console.log(account.getBalance());
+  account.withdraw(50);
+  console.log(account.getBalance());
