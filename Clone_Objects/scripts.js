@@ -1,8 +1,14 @@
-person = {
-    name: Daniel,
+let person = {
+    name: 'Daniel',
     age: 15,
 };
-greet(){
-    alert("Hello",  this.name);
+function greet(){
+    alert("Hello, " + this.name);
 }
-greet();
+person.Hello = greet;
+person.Hello();
+function haveBirthday(){
+    alert(++this.age);
+}
+person.Young = haveBirthday;
+person.Young();
