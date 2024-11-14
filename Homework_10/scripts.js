@@ -46,16 +46,23 @@
 // const validNumbers = [1,2,3,4,5,6];
 // console.log(sumArrayWithValidation(validNumbers)); // Task 2, Homework 10, part_2
 
-let people = [
-    { name: 'John', age: 25, address: '123 Main St'},
-    { name: 'Jane', age: 17, address: '456 Elm St'},
-    { name: 'Bob', age: 30, address: '789 Oak St'},
-    { name: 'Alice', age: 22, address: 123},
-    { name: 'Mike', age: 35, address: '901 Maple St'}
-];
-function NamesOfAdults(people){
-    const result = people.filter(person => person.age >= 18 && typeof person.address === 'string').map(person => person.name);
-    return result;
+// let people = [
+//     { name: 'John', age: 25, address: '123 Main St'},
+//     { name: 'Jane', age: 17, address: '456 Elm St'},
+//     { name: 'Bob', age: 30, address: '789 Oak St'},
+//     { name: 'Alice', age: 22, address: 123},
+//     { name: 'Mike', age: 35, address: '901 Maple St'}
+// ];
+// function NamesOfAdults(people){
+//     const result = people.filter(person => person.age >= 18 && typeof person.address === 'string').map(person => person.name);
+//     return result;
 
+// }
+// console.log(NamesOfAdults(people)); // Task 3, Homework 10, part_2
+let Numbers = ["Daniel", "Nikita", "Gleb"];
+function StringArray(Numbers){
+    Numbers.push("Hello");
+    return Numbers;
 }
-console.log(NamesOfAdults(people)); // Task 3, Homework 10, part_2
+console.log(StringArray(Numbers)); // Task 1, Homework 10, part_3
+
