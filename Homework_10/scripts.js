@@ -59,10 +59,27 @@
 
 // }
 // console.log(NamesOfAdults(people)); // Task 3, Homework 10, part_2
-let Numbers = ["Daniel", "Nikita", "Gleb"];
-function StringArray(Numbers){
-    Numbers.push("Hello");
-    return Numbers;
-}
-console.log(StringArray(Numbers)); // Task 1, Homework 10, part_3
+// let Numbers = ["Daniel", "Nikita", "Gleb"];
+// function StringArray(Numbers){
+//     Numbers.push("Hello");
+//     return Numbers;
+// }
+// console.log(StringArray(Numbers)); // Task 1, Homework 10, part_3
 
+function sumInput() {
+    let numbers = [];
+    while(true){
+        let input = prompt("Введите число", "");
+        if (input === null || input === "" || isNaN(input)){
+            break;
+        }
+        numbers.push(Number(input));
+    }
+    let sum = 0;
+    for (input of numbers) {
+     sum += input;
+    }
+    return sum;
+}
+console.log(sumInput()); // Task_2, Homework 10, part_3
+ 
