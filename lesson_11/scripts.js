@@ -34,3 +34,28 @@
 // let newArr1 = arr9.slice(arr8.findIndex(a => a > 3));
 // console.log(newArr1);//9
 
+let arr10 = [1,2,3,4,5];
+let result = arr10.map(item => item * 2);
+console.log(result); //1
+
+let arr11 = [3,1,4,1,5,9,2,6];
+arr11.sort((a, b) => a - b);
+console.log(arr11);//2
+
+let arr12 = ['hello', 'world'];
+let result1 = arr12.reverse();
+console.log(result1);//3
+
+let str = 'apple,banana,cherry';
+let result2 = str.split(', ');
+for (let fruits of result2){
+    alert(`${fruits}`);
+}//4
+
+let arr13 = ['hello', 'world'];
+let result3 = arr13.join(' ');
+console.log(result3);//5
+
+let arr14 = [1,2,3,4,5];
+let result4 = arr14.reduce((sum, current) => sum * current);
+console.log(result4);//6
