@@ -34,5 +34,17 @@ let result6 = map.has(1);
 console.log(result6);
 for (const value of map.values()){
     console.log(value);
-}
+}// Task_1
 
+
+let set = new Set();
+set.add(1, "Зима");
+set.add(2, "Весна");
+set.add(3, "Лето");
+set.add(4, "Осень");
+let result7 = set.delete(1);
+let result8 = set.has(2);
+console.log(result8);
+for (const value of set){
+    console.log(value);
+}
