@@ -19,3 +19,20 @@ console.log(result3);
 let arr5 = [1,2,3,4,5];
 let result4 = arr5.reduce((sum, current) => sum + current, 20);
 console.log(result4);
+
+
+let map = new Map([
+    [1, "Ivan"],
+    [2, "Aleksey"],
+    [3, "Misha"]
+]);
+for(let amount of map.values()){
+    console.log(amount);
+}
+let result5 = map.delete(1);
+let result6 = map.has(1);
+console.log(result6);
+for (const value of map.values()){
+    console.log(value);
+}
+
