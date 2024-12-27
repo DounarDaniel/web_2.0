@@ -14,15 +14,26 @@
         <li id="one">1</li>
         <li id="two">4</li>
     </ul>
-    <div class="searchBarContainer"></div>
+    <div class="searchBarContainer" style="height: 200px; width: 200px;"></div>
+    <div class="notification"></div>
     <script>
-        function clear(findElem){
-            elem.innerHTML = '';
-        }
-        clear(elem);// Task_1, lesson
-        one.insertAdjacentHTML('afterend', '<li>2</li><li>3</li>');//Task_2, lesson
+        // function clear(findElem){
+        //     elem.innerHTML = '';
+        // }
+        // clear(elem);// Task_1, lesson
+        // one.insertAdjacentHTML('afterend', '<li>2</li><li>3</li>');//Task_2, lesson
 
-        
+
+        const searchBarContainer = document.querySelector('.searchBarContainer');
+        if (searchBarContainer) {
+                searchBarContainer.style.backgroundColor = 'yellow';
+        } else {
+            console.error('Элемент с классом "searchBarContainer" не найден.');
+        }// Task_1, Homework
+
+
+        const notification = document.querySelector('.notification');
+        notification.style.cssText = `display: flex; width: 100%; display: flex; flex-direction: column`;//Task_2, Homework
         </script>
 </body>
 </html>
